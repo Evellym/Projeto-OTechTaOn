@@ -1,48 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br" dir="ltr">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bloco Person</title>
-
-  <link rel="stylesheet" href="styles/reset.css">
-  <link rel="stylesheet" href="styles/style.css">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <meta charset="utf-8">
+  <title>Testezin</title>
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/stylesHeader.css">
+  <link rel="stylesheet" href="css/stylesMain.css">
+  <link rel="stylesheet" href="css/stylesCandidatos.css">
+  <link rel="stylesheet" href="css/stylesFooter.css">
+
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <h1 class="example__h1">
-    Teste de bloco
-  </h1>
+  <header class="header">
+    <img 
+      src="assets/logo.png" 
+      alt="techtuais"
+      class="header__logo"
+    >
+    
+    <nav class="header__nav">
+      <a href="">Visão Geral</a>
+      <a href="">Missão</a>
+      <a href="">Candidatos</a>
+      <a href="">Inscreva-se</a>
+      <a href="">Sobre Nós</a>
+    </nav>
 
-  <div class="bloco">
-    <div class="bloco__row--top">
-      <img 
-        src="https://lh6.googleusercontent.com/S1TDUUl9O3Ejxqyppl2EbG28FxQL7CoRCjjShWwwo2zoy7A5xiZODDeWeN1gcQNc75cIpjgKa42Lmvhyoi8z=w1366-h617" 
-        alt="Lucas photo" 
-        class="img"
-      />
+    <img 
+      src="assets/symbol.png"
+      alt="symbol"
+      class="header__symbol"
+    >
+  </header>
 
-      <ul>
-        <img src="assets/email.png" alt="email.png">
-        <img src="assets/linkedin.png" alt="Linkedin.png">
-        <img src="./assets/github.png" alt="github.png">
-      </ul>
+  <main class="main">
+    <section class="main__header">
+      <div class="main__header--title">
+        <h1>Conecte-se com o futuro!</h1>
+        <h2>Conecte-se com a juventude!</h2>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="candidatos">
+      <h3>Candidatos</h3>
+
+      <div id="render_html_users" class="candidatos__container">
+
+      </div>
+    </section>
+  </main>
+
+  <section>
+  <div class="footer">
+    <h1 class="footer__title"> 
+      <b>Faça parte do nosso time!</b>
+    </h1>
+
+    <div class="footer__body2">
+      <div class="footer__container__left">
+        <h2>
+          Vamos juntos fazer parte dessa jornada!<br>
+          Inscreva-se aqui, deixando seu email, currículo e outras informações.</br>
+          
+        </h2>
+        <table>
+          <tr>
+            
+            <td>Email:</td>
+            <td><input type="text" name="Email" size="70">
+          </tr>
+          <tr>
+            <td>Área de Atuação:</td>
+            <td><input type="text" name="Área de Atuação" size="70"> <br /></td>
+          </tr>
+         </table>
+          </div>
+      </footer>
+</section>
+
+  <footer class="footer">
+    <h2 class="footer__title">
+      Sobre nós
+    </h2>
+
+    <div class="footer__body">
+      <div class="footer__container__left">
+        <div>
+          <h5>Conteúdo:</h5>
+          <p>Endell, Pamela, Thais</p>
+        </div>
+        <div>
+          <h5>UX Design:</h5>
+          <p>Evellyn, Camila, Ruan, Thais</p>
+        </div>
+        <div>
+          <h5>Javascript:</h5>
+          <p>Lucas, Felipe, Ruan</p>
+        </div>
+        <div>
+          <h5>CSS3:</h5>
+          <p>Lucas, Ruan</p>
+        </div>
+        <div>
+          <h5>HTML5:</h5>
+          <p>Davi, Fabyola</p>
+        </div>
+        <div>
+          <h5>Revisão:</h5>
+          <p>Lucas e Camila</p>
+        </div>
+      </div>
+
+      <div class="footer__container__right">
+        <p>
+          Desenvolvido com imensa dedicação, de jovens para jovens.
+        </p>
+
+        <div>
+          <h5>Entre em contato</h5>
+          <div>
+            <a href="mailto:lucasedugoncalves123@gmail.com">
+              <i class='bx bxl-gmail'></i>
+            </a>
+            <i class='bx bxl-github'></i>
+          </div>
+        </div>
+      </div>
     </div>
+  </footer>
 
-    <h3 class="h3">
-      Lucas Gonçalves
-    </h3>
-
-    <div class="text">
-      <p>Olá, meu nome é Lucas Gonçalves. Sou um desenvolvedor web autodidata que vive no estado de Minas Gerais, Brasil.</p>
-      <p>Tenho lutado na frente no último ano, e eventualmente comecei a desfrutar da ideia por trás de cada linha de código. Agora, como profissionalmente conectado com a indústria de software, estou interessado no escopo front-end e livre de novas oportunidades.</p>
-    </div>
-
-    <a class="link" href="#">Curriculo</a>
-  </div>
+  <script src="js/candidatosRender.js"></script>
 </body>
 </html>
